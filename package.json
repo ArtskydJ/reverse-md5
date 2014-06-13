@@ -1,6 +1,6 @@
 {
   "name": "reverse-md5",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./index.js",
   "author": {
     "name": "ArtskydJ",
@@ -27,8 +27,8 @@
     "test": "tap ./test/*.js"
   },
   "dependencies": {
-    "hi-res-stopwatch": "0.0.1",
-    "md5-jkmyers": "0.0.1",
-    "xtend": "^3.0.0"
+    "hi-res-stopwatch": "~0.0.1",
+    "md5-jkmyers": "~0.0.1",
+    "xtend": "~3.0.0"
   }
 }
