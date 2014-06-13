@@ -1,5 +1,5 @@
 ﻿var md5 = require('md5-jkmyers')
-var Stopwatch = require('hi-res-stopwatch')
+var elapsed = require('ns-elapsed')()
 var xtend = require('xtend')
 var chars = []
 
@@ -76,7 +76,6 @@ function replaceNextChar(str, ind) {
 }
 
 function iterate(hash, maxLen) {
-	var elapsed = Stopwatch()
 	elapsed.set()
 	var rnc = new Rnc(chars[0])
 	var status = {running: true, foundHash: false}
