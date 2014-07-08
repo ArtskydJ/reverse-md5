@@ -16,7 +16,7 @@ var strs = {
 	lettersLower: 'abcdefghijklmnopqrstuvwxyz',
 	numbers: '0123456789',
 	special: '`~!@#$%^&*()-_=+|\\;:\'",.<>[]{}/?',
-	whitespace: ' '
+	whitespace: ' \t\n'
 }
 
 function optsToArray(opts) {

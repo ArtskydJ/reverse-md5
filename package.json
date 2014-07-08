@@ -1,12 +1,12 @@
 {
   "name": "reverse-md5",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com"
   },
-  "description": "Finds a string that matches an md5 hash",
+  "description": "Finds a string that hashes to a given md5 hash",
   "keywords": [
     "reverse",
     "brute force",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArtskydJ/objects-equal"
+    "url": "https://github.com/ArtskydJ/reverse-md5"
   },
   "devDependencies": {
     "tap": "^0.4.11"
