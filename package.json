@@ -18,7 +18,7 @@
     "url": "https://github.com/ArtskydJ/reverse-md5"
   },
   "devDependencies": {
-    "tap": "^0.4.11"
+    "tap": "^1.0.10"
   },
   "directories": {
     "test": "test"
@@ -27,8 +27,8 @@
     "test": "tap ./test/*.js"
   },
   "dependencies": {
-    "ns-elapsed": "~0.0.2",
-    "md5-jkmyers": "~0.0.1",
-    "xtend": "~3.0.0"
+    "ns-elapsed": "^1.0.0",
+    "md5-jkmyers": "^0.0.1",
+    "xtend": "^4.0.0"
   }
 }
