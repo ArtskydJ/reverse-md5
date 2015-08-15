@@ -1,34 +1,25 @@
 {
-  "name": "reverse-md5",
-  "version": "0.0.4",
-  "main": "./index.js",
+  "name": "",
+  "version": "",
+  "main": "index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com"
   },
-  "description": "Finds a string that hashes to a given md5 hash",
-  "keywords": [
-    "reverse",
-    "brute force",
-    "md5",
-    "hash"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ArtskydJ/reverse-md5"
   },
-  "devDependencies": {
-    "tap": "^1.0.10"
-  },
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "tap ./test/*.js"
+    "build": "browserify index.js | uglifyjs - -m -o bundle.js",
+    "watch": "watchify index.js -d -o bundle.js"
   },
   "dependencies": {
-    "ns-elapsed": "^1.0.0",
-    "md5-jkmyers": "^0.0.1",
-    "xtend": "^4.0.0"
+    "reverse-md5": "*"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "uglify-js": "^2.4.23",
+    "watchify": "^3.2.1"
   }
 }

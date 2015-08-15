@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Reverse MD5 Demo</title>
+		<link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 style="text-align:center;">Reverse MD5 Demo</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-4">
+					<form class="well">
+						<input type="text" name="md5" class="form-control" id="md5" placeholder="MD5 Hash">
+						<div class="form-group">
+							<div class="checkbox"><label><input type="checkbox" name="lettersUpper">Upper Case (A-Z)</label></div>
+							<div class="checkbox"><label><input type="checkbox" name="lettersLower">Lower Case (a-z)</label></div>
+							<div class="checkbox"><label><input type="checkbox" name="numbers">Digits (0-9)</label></div>
+							<div class="checkbox"><label><input type="checkbox" name="special">Special (@, %, $, etc.)</label></div>
+							<div class="checkbox"><label><input type="checkbox" name="whitespace">Whitespace (" ", \n, etc.)</label></div>
+						</div>
+						<div class="form-group" style="text-align:right;">
+							<input type="number" name="maxLen" class="form-control" value="4">
+							Maximum Length
+						</div>
+						<div class="form-group">
+							<button type="reset" class="btn btn-default">Reset</button>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="result" placeholder="Result" disabled>
+				</div>
+			</div>
+		</div>
+		<script src="./bundle.js"></script>
+	</body>
+</html>
