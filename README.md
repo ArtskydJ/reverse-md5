@@ -28,8 +28,10 @@ var ReverseMd5 = require('reverse-md5')
 	- `maxLen` - The maximum length of string that the module searches for. Defaults to `8`.
 - Returns `rev()`.
 
-# `var obj = rev(hash)`
+# `var obj = rev(hash, [opts])`
+
 - `hash` is an md5 hash string.
+- `opts` is the same as the constructor's opts.
 - Returns an object with the following properties:
 	- `str` - The string that was hashed. E.g. 'hi', 'wat'
 	- `elapsed` - The amount of time that elapsed, in seconds. (Floating point.) E.g. 0.309135532, 2.912352039
