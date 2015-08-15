@@ -5,6 +5,10 @@ reverse-md5
 [![Dependency Status](https://david-dm.org/artskydj/reverse-md5.svg)](https://david-dm.org/artskydj/reverse-md5)
 [![devDependency Status](https://david-dm.org/artskydj/reverse-md5/dev-status.svg)](https://david-dm.org/artskydj/reverse-md5#info=devDependencies)
 
+# [demo][demo]
+
+[![demo-md5](https://cloud.githubusercontent.com/assets/1833684/9291111/277e4e1c-4375-11e5-936c-b1c7062d4ad1.PNG)][demo]
+
 # api
 
 ```js
@@ -55,3 +59,5 @@ Install with [NPM](http://nodejs.org)
 # license
 
 [MIT](http://opensource.org/licenses/MIT)
+
+[demo]: http://artskydj.github.io/reverse-md5/?md5=8ff32489f92f33416694be8fdc2d4c22&lettersLower=on&maxLen=3
