@@ -1,5 +1,5 @@
-var test = require('tap').test
-var Brute = require('../index.js')
+var test = require('tape')
+var Brute = require('./index.js')
 var brute = Brute({
 	lettersUpper: false,
 	lettersLower: true,
