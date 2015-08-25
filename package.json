@@ -24,7 +24,6 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "ns-elapsed": "^1.0.0",
     "md5-jkmyers": "^0.0.1",
     "xtend": "^4.0.0"
   },

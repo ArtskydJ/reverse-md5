@@ -1,5 +1,4 @@
 ﻿var md5 = require('md5-jkmyers')
-var elapsed = require('ns-elapsed')()
 var xtend = require('xtend')
 var chars = []
 
@@ -76,7 +75,7 @@ function replaceNextChar(str, ind) {
 }
 
 function iterate(hash, maxLen) {
-	elapsed.set()
+	var start = new Date().getTime()
 	var rnc = new Rnc(chars[0])
 	var status = {running: true, foundHash: false}
 	var ind = 0
@@ -93,13 +92,15 @@ function iterate(hash, maxLen) {
 				status.running = false
 		}
 	}
-	if (status.foundHash)
+	if (status.foundHash) {
+		var end = new Date().getTime()
 		return {
 			str: rnc.str,
-			elapsed: elapsed.get()
+			elapsed: (end - start) / 1000
 		}
-	else
-		return Error("No string found for hash %s", hash)
+	} else {
+		return new Error("No string found for hash %s", hash)
+	}
 }
 
 module.exports = function Brute(constructorOpts) {
